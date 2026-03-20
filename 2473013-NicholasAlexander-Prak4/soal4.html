@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News and Events</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        .box {
+            width: 180px;
+            height: 150px;
+            padding: 20px;
+            color: white;
+
+            background:
+                url("img/box_tl.gif") no-repeat top left,
+                url("img/box_tr.gif") no-repeat top right,
+                url("img/box_bl.gif") no-repeat bottom left,
+                url("img/box_br.gif") no-repeat bottom right,
+                url("img/box_l.gif") repeat-y left,
+                url("img/box_r.gif") repeat-y right,
+                url("img/box_t.gif") repeat-x top,
+                url("img/box_b.gif") repeat-x bottom;
+                
+            background-color: #7A0000;
+        }
+
+
+        .box b {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .box span {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .box a {
+            float: right;
+            color: yellow;
+            text-decoration: none;
+        }
+
+        .box a:hover {
+            color: green;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <b>12.02.2011</b>
+
+        <span>Satu per satu para pesaing Manchester United mulai
+            menunjukkan tanda-tanda "menyerah". Kini tinggal..</span>
+
+        <a href="">more</a>
+    </div>
+</body>
+
+</html>
