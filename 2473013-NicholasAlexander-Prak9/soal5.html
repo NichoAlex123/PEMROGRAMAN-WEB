@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-4.0.0.min.js"></script>
+    <title>Soal 5</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        #cari_text {
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .perusahaan {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="cari_text">
+
+    <div class="perusahaan">Sun Microsystem</div>
+    <div class="perusahaan">Apache Software Foundation</div>
+    <div class="perusahaan">Oracle Coorporation</div>
+    <div class="perusahaan">Apple Inc</div>
+    <div class="perusahaan">Sap Ag</div>
+    <div class="perusahaan">Accenture</div>
+    <div class="perusahaan">Computer Sciences Coorporation</div>
+    <div class="perusahaan">Google</div>
+    <div class="perusahaan">Softbank</div>
+    <div class="perusahaan">Yahoo</div>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $("#cari_text").keyup(function () {
+
+                $(".perusahaan").css("color", "black");
+
+                var keyword = $(this).val();
+
+                $(".perusahaan:contains('" + keyword + "')")
+                    .css("color", "red");
+
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
