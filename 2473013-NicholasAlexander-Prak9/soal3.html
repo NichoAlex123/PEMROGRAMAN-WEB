@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-4.0.0.min.js"></script>
+    <title>Saol 3</title>
+    <style>
+        .container {
+            margin-top: 20px;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            border: 3px solid blue;
+            display: inline-block;
+            margin-right: 5px;
+            background-color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="change">Change Colors</button>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+            $(".box").click(function () {
+
+                $(".box").css("background-color", "white");
+
+                $(this).css("background-color", "red");
+
+            });
+
+            $("#change").click(function () {
+
+                $(".box").each(function () {
+
+                    if ($(this).css("background-color") == "rgb(255, 0, 0)") {
+
+                        return false;
+                    }
+
+                    $(this).css("background-color", "yellow");
+
+                });
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
