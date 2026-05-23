@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal2</title>
+    <style>
+        .circle{
+            position: relative;
+            /* width: 100px;
+            height: 100px; */
+            padding: 20px;
+        }
+        img{
+            position: absolute;
+            width: 150px;
+        }
+        .righttop {
+            left: 0px;
+            z-index: 3;
+        }
+        .rightbottom {
+            left: 0px;
+            top: 95px;
+            z-index: 1;
+            transform: rotate(180deg);
+        }
+        .middle {
+            left: 100px;
+            z-index: 2;
+        }
+        .lefttop {
+            left: 200px;
+            z-index: 3;
+        }
+        .leftbottom {
+            left: 200px;
+            top: 95px;
+            z-index: 1;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">
+        <img src="src/src/circle-red-half.png" class="righttop">
+        <img src="src/src/circle-red-half.png" class="rightbottom">
+        <img src="src/src/circle-purple.png" class="middle">
+        <img src="src/src/circle-red-half.png" class="lefttop">
+        <img src="src/src/circle-red-half.png" class="leftbottom">
+    </div>
+</body>
+</html>
