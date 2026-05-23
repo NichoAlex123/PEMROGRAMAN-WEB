@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal2</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        td {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .header {
+            background-color: #b7c7b0;
+        }
+
+        .c1 {
+            background-color: #8fb1d9;
+        }
+
+        .c2 {
+            background-color: #e7b38c;
+        }
+
+        .c3 {
+            background-color: #CCFFAA;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td class="header">Position</td>
+            <td class="header">Programming Language</td>
+            <td class="header">Ratings</td>
+        </tr>
+
+        <tr class="c1" onmouseover="hoverRow(this)" onmouseout="unhoverRow(this, 'c1')">
+            <td>1</td>
+            <td>C</td>
+            <td>18.058%</td>
+        </tr>
+
+        <tr class="c2" onmouseover="hoverRow(this)" onmouseout="unhoverRow(this, 'c2')">
+            <td>2</td>
+            <td>Java</td>
+            <td>18.051%</td>
+        </tr>
+
+        <tr class="c1" onmouseover="hoverRow(this)" onmouseout="unhoverRow(this, 'c1')">
+            <td>3</td>
+            <td>C++</td>
+            <td>9.707%</td>
+        </tr>
+
+        <tr class="c2" onmouseover="hoverRow(this)" onmouseout="unhoverRow(this, 'c2')">
+            <td>4</td>
+            <td>PHP</td>
+            <td>9.662%</td>
+        </tr>
+
+        <tr class="c1" onmouseover="hoverRow(this)" onmouseout="unhoverRow(this, 'c1')">
+            <td>5</td>
+            <td>(Visual) Basic</td>
+            <td>6.392%</td>
+        </tr>
+    </table>
+
+    <script>
+        function hoverRow(row) {
+            row.className = "c3";
+        }
+
+        function unhoverRow(row, originalClass) {
+            row.className = originalClass;
+        }
+    </script>
+</body>
+
+</html>
